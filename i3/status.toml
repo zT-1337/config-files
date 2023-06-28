@@ -1,0 +1,36 @@
+[theme]
+theme = "nord-dark"
+[icons]
+icons = "awesome"
+
+[[block]]
+block = "disk_space"
+
+[[block]]
+block = "memory"
+format = " $icon $mem_used_percents.eng(w:1) "
+warning_mem = 70
+critical_mem = 90
+
+[[block]]
+block = "cpu"
+
+[[block]]
+block = "net"
+
+[[block]]
+block = "load"
+format = " $icon $1m "
+
+[[block]]
+block = "time"
+format = " $icon %d/%m %R "
+
+[[block]]
+block = "sound"
+step_width = 5
+max_vol = 150
+
+[[block]]
+block = "battery"
+format = " $icon $percentage "
